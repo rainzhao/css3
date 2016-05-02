@@ -1,0 +1,247 @@
+
+/*清除默认样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../assets/bgBody.png");
+}
+/*设置上半部分的样式（不包含Code的样式）*/
+.content{
+    width: 1200px;
+    height: auto;
+    margin: 18px auto;
+    overflow: hidden;
+}
+.content h1{
+    text-align: center;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #8B979D;
+    font-size: 58px;
+}
+
+
+/*------------------------change样式（界面左侧滑块部分）-------------------------*/
+.changeArea{
+    float: left;
+    text-align: left;
+
+}
+
+.changeItem span{
+    color: #E2E2E2;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    display: inline-block;
+    margin-right: 20px;
+    height:40px;
+    line-height: 30px;
+}
+
+.changeItem label{
+    color: #E2E2E2;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    margin-left: 8px;
+}
+.changeItem input{
+    height: 26px;
+    float: right;
+}
+/*设置select的样式*/
+#cssStyle{
+    height: 30px;
+    outline: none;
+}
+/*--------------场景样式（界面右侧shape样式）-------------------*/
+.scenceArea{
+    border:5px solid #ccc;
+    width:800px;
+    height:500px;
+    float: right;
+    border-radius: 16px;
+}
+/*界面右侧矩形的样式*/
+#shape{
+    overflow: hidden;
+    margin-top: 180px;
+    margin-left: 240px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: #7B7B7B;
+    opacity: 0.5;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 50px 0 50px;
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0);
+    -ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0);
+    -o-transform: rotate(0deg) scale(1) skew(0deg) translate(0);
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0);
+}
+/*图形中文本样式*/
+#shape span{
+    font-family: "微软雅黑";
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+/*cssStyle 选择*/
+#translates{
+    display: block;
+}
+#box_shadow,#text_shadow,#border_radius,#text_radius,#rgb_a,#css_gradient{
+    display: none;
+}
+
+/*空白间隔*/
+.space{
+    height: 20px;
+}
+/*transition样式*/
+#animationTim{
+    float: right;
+    height: 33px;
+}
+#keySta,#keyEnd{
+    float: none;
+    vertical-align: -9px;
+    margin-left: 10px;
+}
+/*按钮样式*/
+#btnAnimate{
+    width: 120px;
+    height: 60px;
+    font-size: 26px;
+    -webkit-box-shadow: 0px 0px 16px #151212;
+    -moz-box-shadow: 0px 0px 16px #151212;
+    box-shadow: 0px 0px 16px #151212;
+    background-color: #E2E2E2;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    outline: none;
+    color: #777171;
+}
+/*导出按钮的样式*/
+#exportBtn{
+    width: 80px;
+    height: 40px;
+    font-size: 22px;
+    -webkit-box-shadow: 0px 0px 16px #151212;
+    -moz-box-shadow: 0px 0px 16px #151212;
+    box-shadow: 0px 0px 16px #151212;
+    background-color: #E2E2E2;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    outline: none;
+    color: #777171;
+    position: absolute;
+    top: -53px;
+}
+/*-----------------------------代码显示部分的样式-------------------------------*/
+.codeView{
+    padding: 10px 20px;
+    width: 1160px;
+    height: 200px;
+    margin: 5px auto;
+    border: 5px solid #ccc;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    border-radius:16px;
+    position: relative;
+}
+
+.codeView h3{
+    color: #E2E2E2;
+}
+/*Code中四个区域的样式*/
+#codeClassName,#codeWebkit,#codeMoz{
+    float: left;
+    width:280px;
+    height:180px;
+    border-right:5px solid #C2BCBC;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-left: 5px;
+}
+#CodeO{
+    float: left;
+    width:280px;
+    height:180px;
+    margin-left: 5px;
+}
+/*底部四块区域的ul*/
+#codeClassName ul,#codeWebkit ul,#codeMoz ul,#CodeO ul{
+    list-style: none;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color:#fff;
+}
+/*遮罩层样式*/
+#mark{
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*textarea样式*/
+#exptext{
+    width: 600px;
+    height: 380px;
+    background-color: #ECECEC;
+    position: fixed;
+    z-index:1000;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+/*设置弹出框的样式*/
+.export{
+    width:100%;
+    height: 60px;
+}
+.export h2{
+    text-align: center;
+    font:24px/60px "微软雅黑";
+    margin-bottom: -1px;
+
+}
+.export .close_img{
+    background: url("../assets/nlogin.png") 0 0 no-repeat;
+    display:inline-block;
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:20px;
+    height:20px;
+}
+/*设置鼠标放上去按钮的样式*/
+.export .close_img:hover{
+    background: url("../assets/nlogin.png") 0 -20px no-repeat;
+}
+/*设置textarea的样式*/
+#exportAnimateCode{
+    width: 595px;
+    height: 300px;
+    font-size: 20px;
+    outline: none;
+    border-color: #ECECEC;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+    resize : none;
+    background-color: #ECECEC;
+
+}

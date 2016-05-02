@@ -1,6 +1,12 @@
-baseurl: /jekyll_demo
-markdown: redcarpet
-safe: false
-rouge: true
-excerpt_separator: "\n\n\n"
-paginate: 5
+title: rainZhao
+email: 695099976@qq.com
+description: rainzhao
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: none
+github_username:  rainzhao
+
+# Build settings
+markdown: kramdown
+
+Regeneration: -w
