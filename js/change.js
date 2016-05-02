@@ -572,8 +572,6 @@ window.onload = function(){
     function setGradient(ele,gradientType,startr,startg,startb,gshposition,gsvposition,endr,endg,endb,gehposition,gevposition,graradsta,graradend){
         if(gradientType=="linear"){
             ele.style.cssText = "background:-webkit-gradient("+gradientType+","+gshposition+"% "+gsvposition+"%,"+gehposition+"% "+gevposition+"%,"+"from(rgb("+startr+","+startg+","+startb+")),"+"to(rgb("+endr+","+endg+","+endb+")));"+
-                "background:-moz-"+gradientType+"-gradient("+gshposition+"% "+gsvposition+"%,"+gehposition+"% "+gevposition+"%,"+"rgb("+startr+","+startg+","+startb+"),"+"rgb("+endr+","+endg+","+endb+"));"+
-                "background:-o-gradient("+gradientType+","+gshposition+"% "+gsvposition+"%,"+gehposition+"% "+gevposition+"%,"+"from(rgb("+startr+","+startg+","+startb+")),"+"to(rgb("+endr+","+endg+","+endb+")));"+
                 "background:gradient("+gradientType+","+gshposition+"% "+gsvposition+"%,"+gehposition+"% "+gevposition+"%,"+"from(rgb("+startr+","+startg+","+startb+")),"+"to(rgb("+endr+","+endg+","+endb+")));"
         }else{
             ele.style.cssText = "background:-webkit-gradient("+gradientType+","+gshposition+" "+gsvposition+","+graradsta+","+gehposition+" "+gevposition+","+graradend+","+"from(rgb("+startr+","+startg+","+startb+")),"+"to(rgb("+endr+","+endg+","+endb+")));"
